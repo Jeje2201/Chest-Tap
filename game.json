@@ -14,9 +14,9 @@
     "macExecutableFilename": "",
     "orientation": "portrait",
     "packageName": "com.NoIdea.ChestTap",
-    "projectFile": "D:\\Document\\JeuxGDevelop\\Projets\\Chest Tap\\game.json",
+    "projectFile": "D:\\Document\\JeuxGDevelop\\Projets\\Chest-Tap\\Game Code\\game.json",
     "scaleMode": "linear",
-    "sizeOnStartupMode": "adaptHeight",
+    "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "winExecutableFilename": "",
@@ -100,16 +100,94 @@
     "currentPlatform": "GDevelop JS platform"
   },
   "resources": {
-    "resources": [],
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/angle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\angle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/milieu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\milieu.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/Plus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\Plus.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/moins.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\moins.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/haut.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\haut.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/bas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\bas.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/gauche.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\gauche.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/droite.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\droite.png",
+        "smoothed": true,
+        "userAdded": true
+      }
+    ],
     "resourceFolders": []
   },
   "objects": [],
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "zoom",
+      "value": "1"
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/newscene"
+      "referenceTo": "/layouts/menu"
     }
   ],
   "externalEvents": [],
