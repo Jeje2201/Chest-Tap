@@ -1,8 +1,8 @@
 {
   "b": 0,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Menu",
-  "name": "Menu",
+  "mangledName": "SplashScreen",
+  "name": "SplashScreen",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,

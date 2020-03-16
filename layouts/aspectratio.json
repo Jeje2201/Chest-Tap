@@ -1,8 +1,8 @@
 {
   "b": 0,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Menu",
-  "name": "Menu",
+  "mangledName": "AspectRatio",
+  "name": "AspectRatio",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
@@ -602,7 +602,7 @@
   ],
   "events": [
     {
-      "disabled": true,
+      "disabled": false,
       "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -649,7 +649,7 @@
       "events": []
     },
     {
-      "disabled": false,
+      "disabled": true,
       "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -673,7 +673,7 @@
           "parameters": [
             "",
             "=",
-            "ScreenWidth()/2",
+            "SceneWindowWidth()",
             "0",
             ""
           ],
