@@ -16,7 +16,7 @@
     "packageName": "com.NoIdea.ChestTap",
     "projectFile": "D:\\Document\\JeuxGDevelop\\Projets\\Chest-Tap\\Game Code\\game.json",
     "scaleMode": "linear",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "winExecutableFilename": "",
@@ -103,82 +103,132 @@
     "resources": [
       {
         "alwaysLoaded": false,
-        "file": "assets/img/angle.png",
+        "file": "assets/img/Temp/violet sad.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\img\\angle.png",
+        "name": "assets\\img\\Temp\\violet sad.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/img/milieu.png",
+        "file": "assets/img/AfterTransparent/Chest_Close.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\img\\milieu.png",
+        "name": "assets\\img\\AfterTransparent\\Chest_Close.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/AfterTransparent/Chest_Open.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\AfterTransparent\\Chest_Open.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "fonts/Roboto-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "fonts\\Roboto-Regular.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "fonts/PixelTypeToFight.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "fonts\\PixelTypeToFight.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/Temp/milieu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\Temp\\milieu.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/BeforeTransparent/Chest_Close.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\BeforeTransparent\\Chest_Close.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/img/Plus.png",
+        "file": "assets/img/BeforeTransparent/Chest_Open.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\img\\Plus.png",
+        "name": "assets\\img\\BeforeTransparent\\Chest_Open.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/img/moins.png",
+        "file": "assets/img/Tap-.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\img\\moins.png",
+        "name": "assets\\img\\Tap-.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/img/haut.png",
+        "file": "assets/img/Temp/All_Chests.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\img\\haut.png",
+        "name": "assets\\img\\Temp\\All_Chests.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/img/bas.png",
+        "file": "assets/img/Temp/angle.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\img\\bas.png",
+        "name": "assets\\img\\Temp\\angle.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/img/gauche.png",
+        "file": "assets/img/Temp/blanc.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\img\\gauche.png",
+        "name": "assets\\img\\Temp\\blanc.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/img/droite.png",
+        "file": "assets/img/AfterTransparent/CoinCounter.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\img\\droite.png",
+        "name": "assets\\img\\AfterTransparent\\CoinCounter.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/img/blanc.png",
+        "file": "assets/img/AfterTransparent/NewChestMarker.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\img\\blanc.png",
+        "name": "assets\\img\\AfterTransparent\\NewChestMarker.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/Temp/background_temp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\Temp\\background_temp.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -189,27 +239,35 @@
   "objectsGroups": [],
   "variables": [
     {
-      "name": "zoom",
-      "value": "1"
+      "name": "Camera",
+      "children": [
+        {
+          "name": "X",
+          "value": "0"
+        },
+        {
+          "name": "Y",
+          "value": "0"
+        },
+        {
+          "name": "Zoom",
+          "value": "1"
+        }
+      ]
     }
   ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/aspectratio"
+      "referenceTo": "/layouts/splashscreen"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/splashscreen"
+      "referenceTo": "/layouts/game"
     }
   ],
   "externalEvents": [],
-  "eventsFunctionsExtensions": [
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/newextension"
-    }
-  ],
+  "eventsFunctionsExtensions": [],
   "externalLayouts": [],
   "externalSourceFiles": []
 }
