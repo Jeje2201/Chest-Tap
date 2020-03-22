@@ -22,7 +22,7 @@
     "gridWidth": 32,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.592
+    "zoomFactor": 0.28
   },
   "objectsGroups": [],
   "variables": [
@@ -85,8 +85,8 @@
       "locked": false,
       "name": "Chest",
       "width": 150,
-      "x": 24,
-      "y": 190,
+      "x": 281,
+      "y": 1668,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -98,6 +98,10 @@
       "initialVariables": [
         {
           "name": "Value",
+          "value": "1"
+        },
+        {
+          "name": "Level",
           "value": "1"
         }
       ]
@@ -116,14 +120,14 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 1
+          "value": 0
         }
       ],
       "stringProperties": [],
       "initialVariables": [
         {
           "name": "Value",
-          "value": "1"
+          "value": "0"
         }
       ]
     },
@@ -341,6 +345,65 @@
       ],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1280,
+      "layer": "",
+      "locked": false,
+      "name": "background_helper",
+      "width": 720,
+      "x": 0,
+      "y": 1500,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1100,
+      "layer": "",
+      "locked": false,
+      "name": "NewObject3",
+      "width": 600,
+      "x": 59,
+      "y": 1592,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 150,
+      "layer": "",
+      "locked": false,
+      "name": "Chest",
+      "width": 150,
+      "x": 24,
+      "y": 190,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Value",
+          "value": "1"
+        },
+        {
+          "name": "Level",
+          "value": "1"
+        }
+      ]
     }
   ],
   "objects": [
@@ -353,6 +416,10 @@
         {
           "name": "Value",
           "value": "1"
+        },
+        {
+          "name": "Nb_Clics",
+          "value": "0"
         }
       ],
       "behaviors": [],
@@ -526,12 +593,90 @@
       "behaviors": [],
       "string": "22",
       "font": "",
-      "characterSize": 75,
+      "characterSize": 50,
       "color": {
         "b": 255,
         "g": 255,
         "r": 255
       }
+    },
+    {
+      "name": "background_helper",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\Temp\\blanc.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NewObject3",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\Temp\\violet sad.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -580,6 +725,19 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "NewObject2",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [],
@@ -617,67 +775,54 @@
                   "subInstructions": []
                 }
               ],
-              "events": [
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "AmoutCoinPerChest",
-                        "Chest.X()",
-                        "Chest.Y()",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "MettreX"
-                      },
-                      "parameters": [
-                        "AmoutCoinPerChest",
-                        "=",
-                        "Chest.X()+Chest.Width()/2-AmountCoinPerChest.Width()"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "AmoutCoinPerChest",
-                        "=",
-                        "ToString(Chest.Variable(Value))"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ChangePlan"
-                      },
-                      "parameters": [
-                        "AmoutCoinPerChest",
-                        "=",
-                        "Chest.ZOrder()+1"
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "AmoutCoinPerChest",
+                    "0",
+                    "1080",
+                    ""
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "AmoutCoinPerChest",
+                    "=",
+                    "\"+ \"+LargeNumberToString(Variable(TotalCoin)-ToNumber(TotalMoney.String()))"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "AmoutCoinPerChest",
+                    "=",
+                    "SceneWindowWidth()/2-AmountCoinPerChest.Width()/2"
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             }
           ]
         },
@@ -774,14 +919,6 @@
           "events": []
         }
       ]
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [],
-      "events": []
     },
     {
       "disabled": false,

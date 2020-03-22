@@ -1233,7 +1233,7 @@
           "behaviors": [],
           "string": "22",
           "font": "",
-          "characterSize": 75,
+          "characterSize": 50,
           "color": {
             "b": 255,
             "g": 255,
@@ -1271,7 +1271,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1283,6 +1283,19 @@
                     "Chest",
                     ">",
                     "862",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "NewObject2",
+                    "",
                     "",
                     ""
                   ],
@@ -1324,67 +1337,54 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": [
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
                     {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "AmoutCoinPerChest",
-                            "Chest.X()",
-                            "Chest.Y()",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreX"
-                          },
-                          "parameters": [
-                            "AmoutCoinPerChest",
-                            "=",
-                            "Chest.X()+Chest.Width()/2-AmountCoinPerChest.Width()"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "TextObject::String"
-                          },
-                          "parameters": [
-                            "AmoutCoinPerChest",
-                            "=",
-                            "ToString(Chest.Variable(Value))"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ChangePlan"
-                          },
-                          "parameters": [
-                            "AmoutCoinPerChest",
-                            "=",
-                            "Chest.ZOrder()+1"
-                          ],
-                          "subInstructions": []
-                        }
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "AmoutCoinPerChest",
+                        "0",
+                        "1080",
+                        ""
                       ],
-                      "events": []
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "AmoutCoinPerChest",
+                        "=",
+                        "\"+ \"+LargeNumberToString(Variable(TotalCoin)-ToNumber(TotalMoney.String()))"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "AmoutCoinPerChest",
+                        "=",
+                        "SceneWindowWidth()/2-AmountCoinPerChest.Width()/2"
+                      ],
+                      "subInstructions": []
                     }
-                  ]
+                  ],
+                  "events": []
                 }
               ]
             },
@@ -1481,14 +1481,6 @@
               "events": []
             }
           ]
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
         },
         {
           "disabled": false,
