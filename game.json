@@ -136,13 +136,6 @@
         "userAdded": true
       },
       {
-        "file": "fonts/PixelTypeToFight.ttf",
-        "kind": "font",
-        "metadata": "",
-        "name": "fonts\\PixelTypeToFight.ttf",
-        "userAdded": true
-      },
-      {
         "alwaysLoaded": false,
         "file": "assets/img/Temp/milieu.png",
         "kind": "image",
@@ -150,51 +143,6 @@
         "name": "assets\\img\\Temp\\milieu.png",
         "smoothed": true,
         "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/img/BeforeTransparent/Chest_Close.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\img\\BeforeTransparent\\Chest_Close.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/img/BeforeTransparent/Chest_Open.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\img\\BeforeTransparent\\Chest_Open.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/img/Tap-.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\img\\Tap-.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/img/Temp/All_Chests.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\img\\Temp\\All_Chests.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/img/Temp/angle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\img\\Temp\\angle.png",
-        "smoothed": true,
-        "userAdded": true
       },
       {
         "alwaysLoaded": false,
